@@ -2,6 +2,7 @@
 # "abcabcbb" is "abc", which the length is 3.
 # "bbbbbb" is "b", length 1
 
+
 def method1(string):
     visited={}
     start=0

@@ -15,6 +15,19 @@ class Solution:
     """
 
     def hasCycle(self, head):
+        if head is None:  # for case: None
+            return False
 
-# write your code here
+        slow = head
+        if head.next is not None:  # for case: 1->null
+            fast = head.next
+        else:
+            return False
 
+        try:
+            while slow is not fast:
+                slow = slow.next
+                fast = fast.next.next  # jumps two slots
+            return True
+        except:
+            return False

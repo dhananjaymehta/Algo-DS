@@ -1,3 +1,5 @@
+# http://www.programcreek.com/2013/03/leetcode-lru-cache-java/
+# http://www.geeksforgeeks.org/implement-lru-cache/
 class LRUCache(object):
     def __init__(self, capacity):
         self.capacity = capacity

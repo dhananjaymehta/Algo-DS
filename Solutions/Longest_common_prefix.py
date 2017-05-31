@@ -28,7 +28,9 @@ def method2(strings):
     if not strings:
         return ""
     l=0
+    print(list(zip(*strings)))
     for ch in zip(*strings):
+        print(ch)
         if len(set(ch))>1:
             return strings[0][:l]
         l+=1
@@ -59,4 +61,4 @@ def helper(string, ch, l, h):
 
 
 strings=["geeksforgeeks", "geeks", "geek", "geezer"]
-print(method3(strings))
+print(method2(strings))
